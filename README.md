@@ -52,15 +52,15 @@ You can simply check the false negative examples obtained from ECM. (See '''Get_
 Here are the examples.
 <div style="display: flex;">
     <div style="flex: 1; margin-right: 10px;">
-        <img src="FN_wrtimg.png" alt="FNs w.r.t. Images" width="100%">
+        <img src="FN_wrtimg.png" alt="FNs w.r.t. Images" width="50%">
     </div>
     <div style="flex: 1;">
-        <img src="FN_wrttxt.png" alt="FNs w.r.t. Texts" width="100%">
+        <img src="FN_wrttxt.png" alt="FNs w.r.t. Texts" width="50%">
     </div>
 </div>
 
 
-#### If you have any questions or problems to run this code, please mail to wotjr3868@snu.ac.kr or gxq9106@gmail.com. Thank you!
+#### If you have any questions or problems to run this code, please mail to wotjr3868@snu.ac.kr or dohoon.kim@snu.ac.kr. Thank you!
 
 
 ### Acknowledgement:
