@@ -49,7 +49,9 @@ python3 -m torch.distributed.launch --nproc_per_node=4 --use_env NLVR.py --confi
 
 ### Check examples from ECM
 You can simply check the false negative examples obtained from ECM. (See `Get_ECM_example.ipynb`)
-You can find the examples in `FN_examples`
+You can find additional examples in `FN_examples`
+<img src="example_connection.png" width="600">
+
 
 #### If you have any questions or problems to run this code, please mail to wotjr3868@snu.ac.kr or dohoon.kim@snu.ac.kr. Thank you!
 
