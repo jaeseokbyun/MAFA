@@ -48,14 +48,8 @@ python3 -m torch.distributed.launch --nproc_per_node=4 --use_env NLVR.py --confi
 
 
 ### Check examples from ECM
-You can simply check the false negative examples obtained from ECM. (See `Get_ECM_exampl.ipynb`)
-
-Here are the examples.
-<p float="left">
-  <img src="FN_wrtimg.png" width="30%" />
-  <img src="FN_wrttxt.png" width="30%" /> 
-</p>
-
+You can simply check the false negative examples obtained from ECM. (See `Get_ECM_example.ipynb`)
+You can find the examples in `FN_examples`
 
 #### If you have any questions or problems to run this code, please mail to wotjr3868@snu.ac.kr or dohoon.kim@snu.ac.kr. Thank you!
 
