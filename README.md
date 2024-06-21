@@ -28,6 +28,8 @@
 
 
 ### Pre-training:
+`Pretrain.py` will be uploaded soon.
+
 1. Pre-train the model using 4 A100 GPUs:
 <pre>python3 -m torch.distributed.launch --nproc_per_node=4 --use_env Pretrain.py --config ./configs/Pretrain.yaml --output_dir output/Pretrain/  </pre> 
 
