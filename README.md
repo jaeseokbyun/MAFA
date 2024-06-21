@@ -52,8 +52,8 @@ You can simply check the false negative examples obtained from ECM. (See `Get_EC
 
 Here are the examples.
 <p float="left">
-  <img src="FN_wrtimg.png" width="50" />
-  <img src="FN_wrttxt.png" width="50" /> 
+  <img src="FN_wrtimg.png" width="50%" />
+  <img src="FN_wrttxt.png" width="50%" /> 
 </p>
 
 
