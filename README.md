@@ -30,12 +30,12 @@
 ### Pre-training:
 `Pretrain.py` will be uploaded soon.
 
-1. Pre-train the model using 4 A100 GPUs:
+1. Pre-train the model for MAFA using 4 A100 GPUs (assume filter model exists):
 <pre>python3 -m torch.distributed.launch --nproc_per_node=4 --use_env Pretrain.py --config ./configs/Pretrain.yaml --output_dir output/Pretrain/  </pre> 
 
 ### Downstream tasks:
 1. IRTR (MS-COCO) using 4 A100 GPUs:
-<pre>python3 -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py --config ./configs/Retrieval_coco.yaml --output_dir output/Retrieval_coco/  --checkpoint [Pretrained checkpoint] </pre> 
+<pre>python3 -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py --config ./configs/Retrieval_coco.yaml --output_dir output/Retrieval_coco/  --checkpoint [Pretrained checkpoint]  --filter_config ./configs/filter.yaml   --filter_checkpoint [Pretrained filter checkpoint] </pre> 
 
 2. IRTR (Flickr) using 4 A100 GPUs:
 <pre>python3 -m torch.distributed.launch --nproc_per_node=4 --use_env Retrieval.py --config ./configs/Retrieval_flickr.yaml --output_dir output/Retrieval_coco/  --checkpoint [Pretrained checkpoint] </pre> 
@@ -59,6 +59,6 @@ You can find additional examples in `FN_examples`
 
 
 ### Acknowledgement:
-Our code implementation is largely borrowed from [GRIT-VLP](https://github.com/jaeseokbyun/GRIT-VLP) since our method is mainly built upon it. We appreciate the original authors for sharing code.
+Our code implementation is largely borrowed from [GRIT-VLP](https://github.com/jaeseokbyun/GRIT-VLP) since our method is mainly built upon it. 
 
 
