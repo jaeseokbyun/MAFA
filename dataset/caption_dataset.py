@@ -112,7 +112,7 @@ class pretrain_dataset(Dataset):
         image = Image.open(ann['image']).convert('RGB')
         image = self.transform(image)
             
-        return image, caption,idx
+        return image, caption
 
 
 class nlvr_pretrain_dataset(Dataset):
